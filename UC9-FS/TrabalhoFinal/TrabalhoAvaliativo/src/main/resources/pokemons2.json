@@ -1,0 +1,20 @@
+[
+    {
+      "nome": "Scatterbug",
+      "tipoPrimario": "Inseto",
+      "tipoSecundario":null,
+      "nivel": 22,
+      "hpMaximo": 100,
+      "hpAtual": 32
+    }, 
+    {
+        "nome": "Togetic",
+        "tipoPrimario": "Fada",
+        "tipoSecundario": "Voador",
+        "nivel": 40,
+        "hpMaximo": 44,
+        "hpAtual": 22
+      }
+
+
+]

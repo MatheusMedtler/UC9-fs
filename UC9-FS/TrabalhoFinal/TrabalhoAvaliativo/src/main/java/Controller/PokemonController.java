@@ -14,6 +14,10 @@ public class PokemonController {
     }
 
     public void cadastrarPokemon(String nome, String tipoPrimario, String tipoSecundario, int nivel, int hpMaximo, int hpAtual) throws Exception {
+
+                if (!pokemon.getNome().matches("[a-zA-Z\\s'’♀♂-]+")) {
+            throw new Exception("Só pode letras, espaços e alguns símbolos no nome");
+        }
         Pokemon pokemon = new Pokemon(nome, tipoPrimario, tipoSecundario, nivel, hpMaximo, hpAtual);
         try {
             pokemonDAO.inserir(pokemon);
